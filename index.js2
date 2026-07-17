@@ -8,7 +8,7 @@ const client = new Client({
   ]
 });
 
-const TOKEN = "PUNE_TOKENUL_AICI";
+const TOKEN = process.env.TOKEN;
 
 client.once("ready", () => {
   console.log(`Botul este online ca ${client.user.tag}`);
